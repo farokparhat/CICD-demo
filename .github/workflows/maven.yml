@@ -22,7 +22,6 @@ jobs:
         run: mvn -B test
 
   snyk-scan-sast:
-    needs: test-with-JDK21
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
